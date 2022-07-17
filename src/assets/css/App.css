@@ -7,6 +7,12 @@ ul{
 }
 
 /* MainPage */
+.Main{
+    grid-template-columns: 47px [start] 3fr [line2] 2fr [line3] 2fr [line4] 3fr [end];
+    grid-template-rows: [row-start] 1fr [row-line2] 1fr [row-line3] 2fr [row-end];
+    display: grid;
+    height: 100vh;
+}
 /* Header */
 .Main .Header{
     display: flex;
@@ -142,4 +148,45 @@ ul{
     color:white;
     background-color:#B5B5B5;
     margin-right:5px;
+}
+
+/* SideNav */
+
+.SideNav{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 10%;
+    bottom: 0%;
+    background: #CEEAFF;
+    border-radius: 0px 32px 0px 0px;
+    width: 47px;
+    height: 90%;
+    z-index: 100;
+}
+.SideNav nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.SideNav nav .nav_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:32px;
+    height: 35%;
+    justify-content: space-between;
+}
+.SideNav nav .nav_wrapper .QSP_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 55%;
+    justify-content: space-between;
+}
+.SideNav nav #setting{
+    margin-bottom: 20px;
 }
